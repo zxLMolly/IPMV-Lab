@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>团队影像库 | IPMV Lab - 安徽农业大学</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        ahauGreen: '#006633',
+                        techBlue: '#0f4c81',
+                    },
+                    fontFamily: {
+                        sans: ['Inter', 'system-ui', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        /* 用于实现瀑布流效果的 CSS */
+        .masonry-grid {
+            column-count: 1;
+            column-gap: 1.5rem;
+        }
+        @media (min-width: 640px) { .masonry-grid { column-count: 2; } }
+        @media (min-width: 1024px) { .masonry-grid { column-count: 3; } }
+        @media (min-width: 1280px) { .masonry-grid { column-count: 4; } }
+        
+        .masonry-item {
+            break-inside: avoid;
+            margin-bottom: 1.5rem;
+        }
+    </style>
+</head>
+<body class="bg-gray-50 text-gray-800 font-sans flex flex-col min-h-screen">
+
+    <nav class="bg-white shadow-md fixed w-full z-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between h-20">
+                <div class="flex items-center">
+                    <a href="./index.html" class="flex-shrink-0 flex items-center gap-3">
+                        <span class="text-2xl font-bold text-techBlue tracking-tight">IPMV <span class="text-ahauGreen">Lab</span></span>
+                        <div class="hidden md:block h-8 w-px bg-gray-300 mx-2"></div>
+                        <div class="hidden md:block">
+                            <div class="text-xs text-gray-500 font-semibold uppercase tracking-wider">安徽农业大学</div>
+                            <div class="text-sm font-bold text-gray-800">智能信息处理及机器视觉实验室</div>
+                        </div>
+                    </a>
+                </div>
+                <div class="hidden md:flex items-center space-x-8">
+                    <a href="./index.html" class="text-gray-700 hover:text-techBlue font-medium transition">首页</a>
+                    <a href="./news.html" class="text-gray-700 hover:text-techBlue font-medium transition">近期动态</a>
+                    <a href="./achievements.html" class="text-gray-700 hover:text-techBlue font-medium transition">团队成果</a>
+                    <a href="./team.html" class="text-techBlue font-bold transition">团队成员</a>
+                    <a href="./join.html" class="px-4 py-2 rounded-md bg-ahauGreen text-white font-medium hover:bg-green-700 transition">加入我们</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <header class="bg-techBlue pt-32 pb-16 text-white text-center relative overflow-hidden">
+        <div class="absolute inset-0 bg-black opacity-20"></div>
+        <div class="max-w-4xl mx-auto px-4 relative z-10">
+            <div class="inline-block bg-white/20 text-blue-50 text-xs font-bold px-3 py-1 rounded-full mb-4">GALLERY</div>
+            <h1 class="text-4xl md:text-5xl font-bold mb-6">团队影像库</h1>
+            <p class="text-blue-100 text-lg max-w-2xl mx-auto">
+                记录实验室的精彩瞬间，定格科研与生活中的美好回忆。
+            </p>
+        </div>
+    </header>
+
+    <main class="flex-grow max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16 w-full">
+        
+        <div class="mb-8">
+            <a href="./team.html" class="inline-flex items-center text-gray-600 hover:text-techBlue transition">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 mr-2" viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M9.707 16.707a1 1 0 01-1.414 0l-6-6a1 1 0 010-1.414l6-6a1 1 0 011.414 1.414L5.414 9H17a1 1 0 110 2H5.414l4.293 4.293a1 1 0 010 1.414z" clip-rule="evenodd" /></svg>
+                返回团队成员页面
+            </a>
+        </div>
+
+        <div class="masonry-grid">
+            
+            <div class="masonry-item relative rounded-xl overflow-hidden group shadow-sm hover:shadow-xl transition duration-500">
+                <img src="./team-p/_20251228232707_696_106.jpg" class="w-full h-auto transform group-hover:scale-105 transition duration-700">
+                <div class="absolute inset-0 bg-gradient-to-t from-black/70 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                    <div class="absolute bottom-4 left-4 text-white">
+                        <!-- <p class="font-bold">2024年春季研讨会</p>
+                        <p class="text-xs opacity-80">会议室讨论</p> -->
+                    </div>
+                </div>
+            </div>
+
+            <div class="masonry-item relative rounded-xl overflow-hidden group shadow-sm hover:shadow-xl transition duration-500">
+                <img src="./team-p/_20251228232615_688_106.jpg" class="w-full h-auto transform group-hover:scale-105 transition duration-700">
+                <div class="absolute inset-0 bg-gradient-to-t from-black/70 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                    <div class="absolute bottom-4 left-4 text-white">
+                       <!--  <p class="font-bold">实验室大合影</p>
+                        <p class="text-xs opacity-80">图书馆前</p> -->
+                    </div>
+                </div>
+            </div>
+
+             <div class="masonry-item relative rounded-xl overflow-hidden group shadow-sm hover:shadow-xl transition duration-500">
+                <img src="./team-p/_20251228232622_689_106.jpg" class="w-full h-auto transform group-hover:scale-105 transition duration-700">
+                <div class="absolute inset-0 bg-gradient-to-t from-black/70 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                    <div class="absolute bottom-4 left-4 text-white">
+                        
+                    </div>
+                </div>
+            </div>
+
+             <div class="masonry-item relative rounded-xl overflow-hidden group shadow-sm hover:shadow-xl transition duration-500">
+                <img src="./team-p/_20251228232626_690_106.jpg" class="w-full h-auto transform group-hover:scale-105 transition duration-700">
+                <div class="absolute inset-0 bg-gradient-to-t from-black/70 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                    <div class="absolute bottom-4 left-4 text-white">
+                        
+                    </div>
+                </div>
+            </div>
+
+            <div class="masonry-item relative rounded-xl overflow-hidden group shadow-sm hover:shadow-xl transition duration-500">
+                <img src="./team-p/_20251228232633_691_106.jpg" class="w-full h-auto transform group-hover:scale-105 transition duration-700">
+                <div class="absolute inset-0 bg-gradient-to-t from-black/70 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                    <div class="absolute bottom-4 left-4 text-white">
+                       
+                    </div>
+                </div>
+            </div>
+
+            <div class="masonry-item relative rounded-xl overflow-hidden group shadow-sm hover:shadow-xl transition duration-500">
+                <img src="./team-p/_20251228232642_692_106.jpg" class="w-full h-auto transform group-hover:scale-105 transition duration-700">
+                <div class="absolute inset-0 bg-gradient-to-t from-black/70 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                    <div class="absolute bottom-4 left-4 text-white">
+                        
+                    </div>
+                </div>
+            </div>
+
+            <div class="masonry-item relative rounded-xl overflow-hidden group shadow-sm hover:shadow-xl transition duration-500">
+                <img src="./team-p/_20251228232648_693_106.jpg" class="w-full h-auto transform group-hover:scale-105 transition duration-700">
+                <div class="absolute inset-0 bg-gradient-to-t from-black/70 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                    <div class="absolute bottom-4 left-4 text-white">
+                        
+                    </div>
+                </div>
+            </div>
+
+            <div class="masonry-item relative rounded-xl overflow-hidden group shadow-sm hover:shadow-xl transition duration-500">
+                <img src="./team-p/_20251228232655_694_106.jpg" class="w-full h-auto transform group-hover:scale-105 transition duration-700">
+                <div class="absolute inset-0 bg-gradient-to-t from-black/70 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                    <div class="absolute bottom-4 left-4 text-white">
+                        
+                    </div>
+                </div>
+            </div>
+
+            <div class="masonry-item relative rounded-xl overflow-hidden group shadow-sm hover:shadow-xl transition duration-500">
+                <img src="./team-p/_20251228232658_695_106.jpg" class="w-full h-auto transform group-hover:scale-105 transition duration-700">
+                <div class="absolute inset-0 bg-gradient-to-t from-black/70 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                    <div class="absolute bottom-4 left-4 text-white">
+                        
+                    </div>
+                </div>
+            </div>
+            <div class="masonry-item relative rounded-xl overflow-hidden group shadow-sm hover:shadow-xl transition duration-500">
+                <img src="./team-p/_20251228232709_697_106.jpg" class="w-full h-auto transform group-hover:scale-105 transition duration-700">
+                <div class="absolute inset-0 bg-gradient-to-t from-black/70 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                    <div class="absolute bottom-4 left-4 text-white">
+                        
+                    </div>
+                </div>
+            </div>
+            <div class="masonry-item relative rounded-xl overflow-hidden group shadow-sm hover:shadow-xl transition duration-500">
+                <img src="./team-p/_20251228232712_698_106.jpg" class="w-full h-auto transform group-hover:scale-105 transition duration-700">
+                <div class="absolute inset-0 bg-gradient-to-t from-black/70 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                    <div class="absolute bottom-4 left-4 text-white">
+                        
+                    </div>
+                </div>
+            </div>
+            <div class="masonry-item relative rounded-xl overflow-hidden group shadow-sm hover:shadow-xl transition duration-500">
+                <img src="./competition/微信图片_20251221165932_651_106.jpg" class="w-full h-auto transform group-hover:scale-105 transition duration-700">
+                <div class="absolute inset-0 bg-gradient-to-t from-black/70 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                    <div class="absolute bottom-4 left-4 text-white">
+                        
+                    </div>
+                </div>
+            </div>
+
+            </div>
+
+    </main>
+
+    <footer id="contact" class="bg-gray-900 text-white py-12 mt-auto">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 grid md:grid-cols-3 gap-8">
+            <div>
+                <h4 class="text-lg font-bold mb-4">联系我们</h4>
+                <p class="text-gray-400 mb-2">安徽省合肥市长江西路130号</p>
+                <p class="text-gray-400 mb-2">安徽农业大学</p>
+                <p class="text-gray-400 mb-2">信息与人工智能学院</p>
+            </div>
+            <div>
+                <h4 class="text-lg font-bold mb-4">相关链接</h4>
+                <ul class="space-y-2 text-gray-400">
+                    <li><a href="https://www.ahau.edu.cn/" class="hover:text-white transition">安徽农业大学官网</a></li>
+                    <li><a href="https://xzxy.ahau.edu.cn/" class="hover:text-white transition">信息与人工智能学院</a></li>
+                    <li><a href="#" class="hover:text-white transition">中国计算机学会 (CCF)</a></li>
+                </ul>
+            </div>
+            <div>
+                <h4 class="text-lg font-bold mb-4">加入我们</h4>
+                <p class="text-gray-400 text-sm mb-4">
+                    欢迎对计算机视觉、深度学习感兴趣的本科生、研究生加入实验室。联系方式：zhouqiong@ahau.edu.cn，QQ: 24187277
+                </p>
+            </div>
+        </div>
+        <div class="border-t border-gray-800 mt-12 pt-8 text-center text-gray-500 text-sm">
+            &copy; 2025 Intelligent Information Processing and Machine Vision Laboratory. All rights reserved.
+        </div>
+    </footer>
+
+</body>
+</html>

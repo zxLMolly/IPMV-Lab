@@ -1,0 +1,398 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>近期动态 | IPMV Lab</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: { ahauGreen: '#006633', techBlue: '#0f4c81' },
+                    fontFamily: { sans: ['Inter', 'system-ui', 'sans-serif'] }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="bg-gray-50 text-gray-800 font-sans flex flex-col min-h-screen">
+
+    <nav class="bg-white shadow-md fixed w-full z-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between h-20">
+                <div class="flex items-center">
+                    <a href="./index.html" class="flex-shrink-0 flex items-center gap-3">
+                        <span class="text-2xl font-bold text-techBlue tracking-tight">IPMV <span class="text-ahauGreen">Lab</span></span>
+                    </a>
+                </div>
+                <div class="hidden md:flex items-center space-x-8">
+                    <a href="./index.html" class="text-gray-700 hover:text-techBlue font-medium transition">首页</a>
+                    <a href="./news.html" class="text-techBlue font-bold transition">近期动态</a>
+                    <a href="./achievements.html" class="text-gray-700 hover:text-techBlue font-medium transition">团队成果</a>
+                    <a href="./team.html" class="text-gray-700 hover:text-techBlue font-medium transition">团队成员</a>
+                    <a href="./join.html" class="px-4 py-2 rounded-md bg-ahauGreen text-white font-medium hover:bg-green-700 transition">加入我们</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <header class="bg-gray-900 pt-32 pb-16 text-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <h1 class="text-4xl font-bold mb-4">Lab News & Events</h1>
+            <p class="text-gray-400 text-lg">记录实验室的科研进展、团队交流与精彩瞬间</p>
+        </div>
+    </header>
+
+    <main class="flex-grow max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-16 w-full">
+        
+        <div class="space-y-10">
+
+            
+
+
+            <article class="flex flex-col md:flex-row bg-white rounded-2xl shadow-sm border border-gray-100 overflow-hidden hover:shadow-lg transition group">
+                <div class="md:w-1/3 h-56 md:h-auto overflow-hidden relative">
+                    <img src="./new/8.png" 
+                         alt="会议合影" 
+                         class="w-full h-full object-cover transform group-hover:scale-105 transition duration-500">
+                    <div class="absolute top-4 left-4 bg-orange-500 text-white text-xs font-bold px-3 py-1 rounded-full">
+                        学科竞赛
+                    </div>
+                </div>
+                
+                <div class="p-8 md:w-2/3 flex flex-col justify-center">
+                    <div class="flex items-center text-sm text-gray-500 mb-3 space-x-4">
+                        <div class="flex items-center">
+                            <svg class="w-4 h-4 mr-1" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"></path></svg>
+                            2025年11月
+                        </div>
+                        <div class="flex items-center text-ahauGreen font-medium">
+                            <svg class="w-4 h-4 mr-1" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"></path><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"></path></svg>
+                            安徽·铜陵
+                        </div>
+                    </div>
+                    
+                    <h2 class="text-2xl font-bold text-gray-900 mb-3 group-hover:text-techBlue transition">
+                        <a href="#">实验室成员在2025年安徽省大学生计算机博弈大赛中获一等奖两项</a>
+                    </h2>
+                    
+                    <p class="text-gray-600 leading-relaxed mb-6 line-clamp-2">
+                        2025年安徽省大学生计算机博弈大赛在铜陵学院圆满落幕。实验室杨湘怡作为队长带领团队斩获军棋赛道一等奖，潘帅作为队长带领团队斩获海克斯赛道一等奖。
+                    </p>
+                    
+                    <a href="./new-6.html" class="inline-flex items-center text-techBlue font-semibold hover:text-ahauGreen transition">
+                        阅读全文 <span class="ml-2">&rarr;</span>
+                    </a>
+                </div>
+            </article>
+
+            <article class="flex flex-col md:flex-row bg-white rounded-2xl shadow-sm border border-gray-100 overflow-hidden hover:shadow-lg transition group">
+                <div class="md:w-1/3 h-56 md:h-auto overflow-hidden relative">
+                    <img src="./new/9.png" 
+                         alt="会议合影" 
+                         class="w-full h-full object-cover transform group-hover:scale-105 transition duration-500">
+                    <div class="absolute top-4 left-4 bg-orange-500 text-white text-xs font-bold px-3 py-1 rounded-full">
+                        学科竞赛
+                    </div>
+                </div>
+                
+                <div class="p-8 md:w-2/3 flex flex-col justify-center">
+                    <div class="flex items-center text-sm text-gray-500 mb-3 space-x-4">
+                        <div class="flex items-center">
+                            <svg class="w-4 h-4 mr-1" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"></path></svg>
+                            2025年11月
+                        </div>
+                        <div class="flex items-center text-ahauGreen font-medium">
+                            <svg class="w-4 h-4 mr-1" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"></path><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"></path></svg>
+                            安徽·合肥
+                        </div>
+                    </div>
+                    
+                    <h2 class="text-2xl font-bold text-gray-900 mb-3 group-hover:text-techBlue transition">
+                        <a href="#">实验室成员在2025年安徽省大学生数学竞赛中获三等奖</a>
+                    </h2>
+                    
+                    <p class="text-gray-600 leading-relaxed mb-6 line-clamp-2">
+                        2025年安徽省大学生数学竞赛在中国科学技术大学圆满落幕。实验室成员潘帅同学凭借扎实的数学功底与灵活的解题策略，在非数学A类组别中斩获三等奖。
+                    
+                    <a href="./new-7.html" class="inline-flex items-center text-techBlue font-semibold hover:text-ahauGreen transition">
+                        阅读全文 <span class="ml-2">&rarr;</span>
+                    </a>
+                </div>
+            </article>
+            
+            
+            <article class="flex flex-col md:flex-row bg-white rounded-2xl shadow-sm border border-gray-100 overflow-hidden hover:shadow-lg transition group">
+                <div class="md:w-1/3 h-56 md:h-auto overflow-hidden relative">
+                    <img src="./new/7.png" 
+                         alt="会议合影" 
+                         class="w-full h-full object-cover transform group-hover:scale-105 transition duration-500">
+                    <div class="absolute top-4 left-4 bg-orange-500 text-white text-xs font-bold px-3 py-1 rounded-full">
+                        学科竞赛
+                    </div>
+                </div>
+                
+                <div class="p-8 md:w-2/3 flex flex-col justify-center">
+                    <div class="flex items-center text-sm text-gray-500 mb-3 space-x-4">
+                        <div class="flex items-center">
+                            <svg class="w-4 h-4 mr-1" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"></path></svg>
+                            2025年10月
+                        </div>
+                        <div class="flex items-center text-ahauGreen font-medium">
+                            <svg class="w-4 h-4 mr-1" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"></path><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"></path></svg>
+                            安徽·合肥
+                        </div>
+                    </div>
+                    
+                    <h2 class="text-2xl font-bold text-gray-900 mb-3 group-hover:text-techBlue transition">
+                        <a href="#">实验室项目在2025年安徽省大数据与人工智能应用竞赛中获安徽省总决赛一等奖</a>
+                    </h2>
+                    
+                    <p class="text-gray-600 leading-relaxed mb-6 line-clamp-2">
+                        安徽省教育厅主办的2025年安徽省大数据与人工智能应用竞赛决赛收官。实验室项目《基于StereoIRR的全天候智能信号灯多维协同决策系统》，荣获安徽省一等奖。
+                    </p>
+                    
+                    <a href="./new-5.html" class="inline-flex items-center text-techBlue font-semibold hover:text-ahauGreen transition">
+                        阅读全文 <span class="ml-2">&rarr;</span>
+                    </a>
+                </div>
+            </article>
+
+
+
+            <article class="flex flex-col md:flex-row bg-white rounded-2xl shadow-sm border border-gray-100 overflow-hidden hover:shadow-lg transition group">
+                <div class="md:w-1/3 h-56 md:h-auto overflow-hidden relative">
+                    <img src="./competition/微信图片_20251221170246_654_106.jpg" 
+                         alt="会议合影" 
+                         class="w-full h-full object-cover transform group-hover:scale-105 transition duration-500">
+                    <div class="absolute top-4 left-4 bg-orange-500 text-white text-xs font-bold px-3 py-1 rounded-full">
+                        学科竞赛
+                    </div>
+                </div>
+                
+                <div class="p-8 md:w-2/3 flex flex-col justify-center">
+                    <div class="flex items-center text-sm text-gray-500 mb-3 space-x-4">
+                        <div class="flex items-center">
+                            <svg class="w-4 h-4 mr-1" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"></path></svg>
+                            2025年7月30日
+                        </div>
+                        <div class="flex items-center text-ahauGreen font-medium">
+                            <svg class="w-4 h-4 mr-1" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"></path><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"></path></svg>
+                            安徽·蚌埠
+                        </div>
+                    </div>
+                    
+                    <h2 class="text-2xl font-bold text-gray-900 mb-3 group-hover:text-techBlue transition">
+                        <a href="#">实验室团队斩获2025年安徽省大学生创新大赛高教主赛道金奖</a>
+                    </h2>
+                    
+                    <p class="text-gray-600 leading-relaxed mb-6 line-clamp-2">
+                        在近日的2025年安徽省大学生创新大赛中，我实验室选送的项目从全省数万个参赛项目中脱颖而出，荣获高教主赛道金奖，充分展现了实验室学子的科研创新能力。
+                    </p>
+                    
+                    <a href="./news-1.html" class="inline-flex items-center text-techBlue font-semibold hover:text-ahauGreen transition">
+                        阅读全文 <span class="ml-2">&rarr;</span>
+                    </a>
+                </div>
+            </article>
+
+            <article class="flex flex-col md:flex-row bg-white rounded-2xl shadow-sm border border-gray-100 overflow-hidden hover:shadow-lg transition group">
+                <div class="md:w-1/3 h-56 md:h-auto overflow-hidden relative">
+                    <img src="./new/6.png" 
+                         alt="会议合影" 
+                         class="w-full h-full object-cover transform group-hover:scale-105 transition duration-500">
+                    <div class="absolute top-4 left-4 bg-orange-500 text-white text-xs font-bold px-3 py-1 rounded-full">
+                        学科竞赛
+                    </div>
+                </div>
+                
+                <div class="p-8 md:w-2/3 flex flex-col justify-center">
+                    <div class="flex items-center text-sm text-gray-500 mb-3 space-x-4">
+                        <div class="flex items-center">
+                            <svg class="w-4 h-4 mr-1" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"></path></svg>
+                            2025年6月
+                        </div>
+                        <div class="flex items-center text-ahauGreen font-medium">
+                            <svg class="w-4 h-4 mr-1" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"></path><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"></path></svg>
+                            安徽·合肥
+                        </div>
+                    </div>
+                    
+                    <h2 class="text-2xl font-bold text-gray-900 mb-3 group-hover:text-techBlue transition">
+                        <a href="#">实验室成员在第十一届“挑战杯·华安证券”安徽省大学生课外学术科技作品竞赛中斩获三等奖</a>
+                    </h2>
+                    
+                    <p class="text-gray-600 leading-relaxed mb-6 line-clamp-2">
+                        第十一届“挑战杯·华安证券”安徽省大学生课外学术科技作品竞赛评荣誉证书正式颁发。实验室项目《农晴智判--机器视觉与AI赋能的农业保险全链领航者》，斩获大赛三等奖。
+                    </p>
+                    
+                    <a href="./new-4.html" class="inline-flex items-center text-techBlue font-semibold hover:text-ahauGreen transition">
+                        阅读全文 <span class="ml-2">&rarr;</span>
+                    </a>
+                </div>
+            </article>
+
+            <article class="flex flex-col md:flex-row bg-white rounded-2xl shadow-sm border border-gray-100 overflow-hidden hover:shadow-lg transition group">
+                <div class="md:w-1/3 h-56 md:h-auto overflow-hidden relative">
+                    <img src="./new/1.jpg" 
+                         alt="" 
+                         class="w-full h-full object-cover transform group-hover:scale-105 transition duration-500">
+                    <div class="absolute top-4 left-4 bg-techBlue text-white text-xs font-bold px-3 py-1 rounded-full">
+                        实践调研
+                    </div>
+                </div>
+                
+                <div class="p-8 md:w-2/3 flex flex-col justify-center">
+                    <div class="flex items-center text-sm text-gray-500 mb-3 space-x-4">
+                        <div class="flex items-center">
+                            <svg class="w-4 h-4 mr-1" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"></path></svg>
+                            2025年3月26日
+                        </div>
+                        <div class="flex items-center text-ahauGreen font-medium">
+                            <svg class="w-4 h-4 mr-1" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"></path><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"></path></svg>
+                            安徽·合肥
+                        </div>
+                    </div>
+                    
+                    <h2 class="text-2xl font-bold text-gray-900 mb-3 group-hover:text-techBlue transition">
+                        <a href="#">实验室在巢湖开展数据采集工作</a>
+                    </h2>
+                    
+                    <p class="text-gray-600 leading-relaxed mb-6 line-clamp-2">
+                        为了更好地理解农业环境中的视觉感知挑战，实验室团队于2025年3月前往巢湖地区，开展数据采集调研活动。团队成员在周琼老师带领下，利用无人机和地面传感设备，收集了大量高质量的图像数据与农田水样数据，为后续的算法开发提供了坚实的基础。
+                    </p>
+                    
+                    <a href="./new-2.html" class="inline-flex items-center text-techBlue font-semibold hover:text-ahauGreen transition">
+                        阅读全文 <span class="ml-2">&rarr;</span>
+                    </a>
+                </div>
+            </article>
+
+            
+
+
+            <article class="flex flex-col md:flex-row bg-white rounded-2xl shadow-sm border border-gray-100 overflow-hidden hover:shadow-lg transition group">
+                <div class="md:w-1/3 h-56 md:h-auto overflow-hidden relative">
+                    <img src="./new/5.jpg" 
+                         alt="会议合影" 
+                         class="w-full h-full object-cover transform group-hover:scale-105 transition duration-500">
+                    <div class="absolute top-4 left-4 bg-orange-500 text-white text-xs font-bold px-3 py-1 rounded-full">
+                        学科竞赛
+                    </div>
+                </div>
+                
+                <div class="p-8 md:w-2/3 flex flex-col justify-center">
+                    <div class="flex items-center text-sm text-gray-500 mb-3 space-x-4">
+                        <div class="flex items-center">
+                            <svg class="w-4 h-4 mr-1" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"></path></svg>
+                            2024年8月6日
+                        </div>
+                        <div class="flex items-center text-ahauGreen font-medium">
+                            <svg class="w-4 h-4 mr-1" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"></path><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"></path></svg>
+                            安徽·合肥
+                        </div>
+                    </div>
+                    
+                    <h2 class="text-2xl font-bold text-gray-900 mb-3 group-hover:text-techBlue transition">
+                        <a href="#">实验室团队斩获2024年安徽省大学生创新大赛高教主赛道金奖</a>
+                    </h2>
+                    
+                    <p class="text-gray-600 leading-relaxed mb-6 line-clamp-2">
+                        在近日的2024年安徽省大学生创新大赛中，我实验室选送的项目从全省数万个参赛项目中脱颖而出，荣获高教主赛道金奖。
+                    </p>
+                    
+                    <a href="./new-3.html" class="inline-flex items-center text-techBlue font-semibold hover:text-ahauGreen transition">
+                        阅读全文 <span class="ml-2">&rarr;</span>
+                    </a>
+                </div>
+            </article>
+
+
+
+            <!-- <article class="flex flex-col md:flex-row bg-white rounded-2xl shadow-sm border border-gray-100 overflow-hidden hover:shadow-lg transition group">
+                <div class="md:w-1/3 h-56 md:h-auto overflow-hidden relative">
+                    <img src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" 
+                         alt="团队合作" 
+                         class="w-full h-full object-cover transform group-hover:scale-105 transition duration-500">
+                    <div class="absolute top-4 left-4 bg-ahauGreen text-white text-xs font-bold px-3 py-1 rounded-full">
+                        项目合作
+                    </div>
+                </div>
+                
+                <div class="p-8 md:w-2/3 flex flex-col justify-center">
+                    <div class="flex items-center text-sm text-gray-500 mb-3 space-x-4">
+                        <div class="flex items-center">
+                            <svg class="w-4 h-4 mr-1" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"></path></svg>
+                            2024年11月20日
+                        </div>
+                    </div>
+                    
+                    <h2 class="text-2xl font-bold text-gray-900 mb-3 group-hover:text-techBlue transition">
+                        <a href="#">实验室与省农科院达成智慧果园项目战略合作</a>
+                    </h2>
+                    
+                    <p class="text-gray-600 leading-relaxed mb-6 line-clamp-2">
+                        为了进一步推动产学研深度融合，实验室与安徽省农业科学院签订战略合作协议，将共同开发基于无人机的果园病虫害监测系统，助力智慧农业发展。
+                    </p>
+                    
+                    <a href="#" class="inline-flex items-center text-techBlue font-semibold hover:text-ahauGreen transition">
+                        阅读全文 <span class="ml-2">&rarr;</span>
+                    </a>
+                </div>
+            </article>
+
+            <article class="flex flex-col md:flex-row bg-white rounded-2xl shadow-sm border border-gray-100 overflow-hidden hover:shadow-lg transition group">
+                <div class="md:w-1/3 h-56 md:h-auto overflow-hidden relative">
+                    <img src="https://images.unsplash.com/photo-1531482615713-2afd69097998?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" 
+                         alt="迎新" 
+                         class="w-full h-full object-cover transform group-hover:scale-105 transition duration-500">
+                    <div class="absolute top-4 left-4 bg-orange-500 text-white text-xs font-bold px-3 py-1 rounded-full">
+                        团队建设
+                    </div>
+                </div>
+                
+                <div class="p-8 md:w-2/3 flex flex-col justify-center">
+                    <div class="flex items-center text-sm text-gray-500 mb-3 space-x-4">
+                        <div class="flex items-center">
+                            <svg class="w-4 h-4 mr-1" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"></path></svg>
+                            2024年09月10日
+                        </div>
+                    </div>
+                    
+                    <h2 class="text-2xl font-bold text-gray-900 mb-3 group-hover:text-techBlue transition">
+                        <a href="#">热烈欢迎 2024 级硕士研究生加入 IPMV 实验室</a>
+                    </h2>
+                    
+                    <p class="text-gray-600 leading-relaxed mb-6 line-clamp-2">
+                        新学期伊始，实验室迎来了 3 位充满活力的新同学。在入组见面会上，周老师介绍了实验室的研究方向与规章制度...
+                    </p>
+                    
+                    <a href="#" class="inline-flex items-center text-techBlue font-semibold hover:text-ahauGreen transition">
+                        阅读全文 <span class="ml-2">&rarr;</span>
+                    </a>
+                </div>
+            </article> -->
+
+        </div>
+        
+        <div class="mt-16 flex justify-center">
+            <nav class="flex space-x-2" aria-label="Pagination">
+                <a href="#" class="px-4 py-2 border border-gray-300 rounded-md text-sm font-medium text-gray-700 bg-white hover:bg-gray-50">上一页</a>
+                <a href="#" class="px-4 py-2 border border-gray-300 rounded-md text-sm font-medium text-white bg-techBlue">1</a>
+                <!-- <a href="#" class="px-4 py-2 border border-gray-300 rounded-md text-sm font-medium text-gray-700 bg-white hover:bg-gray-50">2</a>
+                <a href="#" class="px-4 py-2 border border-gray-300 rounded-md text-sm font-medium text-gray-700 bg-white hover:bg-gray-50">3</a> -->
+                <a href="#" class="px-4 py-2 border border-gray-300 rounded-md text-sm font-medium text-gray-700 bg-white hover:bg-gray-50">下一页</a>
+            </nav>
+        </div>
+
+    </main>
+
+    <footer id="contact" class="bg-gray-900 text-white py-12 mt-auto">
+        <div class="max-w-7xl mx-auto px-4 text-center text-sm text-gray-500">
+            &copy; 2025 Intelligent Information Processing and Machine Vision Laboratory.
+        </div>
+    </footer>
+</body>
+</html>

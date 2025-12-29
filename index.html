@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>智能信息处理及机器视觉实验室 | 安徽农业大学</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        ahauGreen: '#006633', // 安徽农大标志性绿色
+                        techBlue: '#0f4c81',  // 科技蓝
+                    },
+                    fontFamily: {
+                        sans: ['Inter', 'system-ui', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        /* 自定义微调 */
+        .hero-bg {
+            /* 这里建议替换为你实验室的真实大图，如无人机作业或神经网络图 */
+            background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('https://images.unsplash.com/photo-1527430253228-e93688616381?ixlib=rb-1.2.1&auto=format&fit=crop&w=1950&q=80');
+            background-size: cover;
+            background-position: center;
+        }
+    </style>
+</head>
+<body class="bg-gray-50 text-gray-800 font-sans">
+
+    <nav class="bg-white shadow-md fixed w-full z-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between h-20">
+                <div class="flex items-center">
+                    <div class="flex-shrink-0 flex items-center gap-3">
+                        <span class="text-2xl font-bold text-techBlue tracking-tight">IPMV <span class="text-ahauGreen">Lab</span></span>
+                        <div class="hidden md:block h-8 w-px bg-gray-300 mx-2"></div>
+                        <div class="hidden md:block">
+                            <div class="text-xs text-gray-500 font-semibold uppercase tracking-wider">安徽农业大学</div>
+                            <div class="text-sm font-bold text-gray-800">智能信息处理及机器视觉实验室</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="hidden md:flex items-center space-x-8">
+                <a href="./index.html" class="text-gray-700 hover:text-techBlue font-medium transition">首页</a>
+                <a href="./news.html" class="text-gray-700 hover:text-techBlue font-medium transition">近期动态</a>
+                <a href="./achievements.html" class="text-gray-700 hover:text-techBlue font-medium transition">团队成果</a>
+                <a href="./team.html" class="text-gray-700 hover:text-techBlue font-medium transition">团队成员</a>
+                
+                <a href="./join.html" class="px-4 py-2 rounded-md bg-ahauGreen text-white font-medium hover:bg-green-700 transition">加入我们</a>
+            </div>
+            </div>
+        </div>
+    </nav>
+
+    <section id="home" class="relative h-screen flex items-center justify-center text-center px-4 overflow-hidden">
+    
+            <div id="hero-slides" class="absolute inset-0 z-0">
+                <div class="hero-slide absolute inset-0 w-full h-full bg-cover bg-center transition-opacity duration-1000 ease-in-out opacity-100" 
+                    style="background-image: url('./photo-/photo8.jpg');">
+                </div>
+                
+                <div class="hero-slide absolute inset-0 w-full h-full bg-cover bg-center transition-opacity duration-1000 ease-in-out opacity-0" 
+                    style="background-image: url('./photo-/photo6.jpg');">
+                </div>
+
+                <div class="hero-slide absolute inset-0 w-full h-full bg-cover bg-center transition-opacity duration-1000 ease-in-out opacity-0" 
+                    style="background-image: url('./photo-/photo7.png');">
+                </div>
+                <div class="hero-slide absolute inset-0 w-full h-full bg-cover bg-center transition-opacity duration-1000 ease-in-out opacity-0" 
+                    style="background-image: url('./photo-/photo4.jpg');">
+                </div>
+            </div>
+
+            <div class="absolute inset-0 bg-black bg-opacity-50 z-10"></div>
+
+            <div class="relative z-20 max-w-4xl mx-auto text-white">
+                <h1 class="text-4xl md:text-6xl font-bold mb-6 leading-tight">
+                    赋能农业，感知未来
+                </h1>
+                <p class="text-xl md:text-2xl text-gray-200 mb-10 font-light">
+                    Intelligent Information Processing & Machine Vision Laboratory
+                </p>
+                <div class="flex flex-col md:flex-row gap-4 justify-center">
+                    <a href="#research" class="px-8 py-3 rounded-full bg-ahauGreen hover:bg-green-600 text-white font-semibold transition shadow-lg">
+                        探索研究领域
+                    </a>
+                    <a href="./achievements.html" class="px-8 py-3 rounded-full bg-white text-gray-900 hover:bg-gray-100 font-semibold transition shadow-lg">
+                        最新成果
+                    </a>
+                </div>
+            </div>
+
+        </section>
+
+        <script>
+            document.addEventListener('DOMContentLoaded', function() {
+                const slides = document.querySelectorAll('.hero-slide');
+                let currentSlide = 0;
+                const slideInterval = 3000; 
+
+                function nextSlide() {
+                    slides[currentSlide].classList.remove('opacity-100');
+                    slides[currentSlide].classList.add('opacity-0');
+
+                    currentSlide = (currentSlide + 1) % slides.length;
+
+                    slides[currentSlide].classList.remove('opacity-0');
+                    slides[currentSlide].classList.add('opacity-100');
+                }
+
+                setInterval(nextSlide, slideInterval);
+            });
+        </script>
+
+    <section id="research" class="py-20 bg-transparent relative z-10">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="text-center mb-16">
+            <h2 class="text-3xl font-bold text-gray-900 mb-4">研究方向</h2>
+            <div class="w-16 h-1 bg-ahauGreen mx-auto"></div>
+            <p class="mt-4 text-gray-600 max-w-2xl mx-auto">
+                我们结合安农大的特色，将前沿的人工智能技术应用于复杂的农业与生态场景。
+            </p>
+        </div>
+
+        <div class="grid md:grid-cols-3 gap-8">
+            
+            <a href="./research-cv.html" class="block bg-white/90  rounded-xl p-8 hover:shadow-xl transition duration-300 border border-gray-100 group hover:-translate-y-1 cursor-pointer">
+                <div class="w-14 h-14 bg-blue-100 rounded-lg flex items-center justify-center mb-6 group-hover:bg-techBlue transition">
+                    <svg class="w-8 h-8 text-techBlue group-hover:text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z" /><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z" /></svg>
+                </div>
+                <h3 class="text-xl font-bold mb-3 text-gray-900 group-hover:text-techBlue transition">计算机视觉与图像理解</h3>
+                <p class="text-gray-600 leading-relaxed mb-6">
+                    研究复杂场景下的目标检测、分割与跟踪算法，重点解决遮挡、光照变化等鲁棒性问题。
+                </p>
+                <div class="flex items-center text-techBlue font-semibold text-sm group-hover:translate-x-2 transition duration-300">
+                    了解详情 <span class="ml-1">&rarr;</span>
+                </div>
+            </a>
+
+            <a href="./research-agri.html" class="block bg-white/90  rounded-xl p-8 hover:shadow-xl transition duration-300 border border-gray-100 group hover:-translate-y-1 cursor-pointer">
+                <div class="w-14 h-14 bg-green-100 rounded-lg flex items-center justify-center mb-6 group-hover:bg-ahauGreen transition">
+                    <svg class="w-8 h-8 text-ahauGreen group-hover:text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3.055 11H5a2 2 0 012 2v1a2 2 0 002 2 2 2 0 012 2v2.945M8 3.935V5.5A2.5 2.5 0 0010.5 8h.5a2 2 0 012 2 2 2 0 104 0 2 2 0 012-2h1.064M15 20.488V18a2 2 0 012-2h3.064M21 12a9 9 0 11-18 0 9 9 0 0118 0z" /></svg>
+                </div>
+                <h3 class="text-xl font-bold mb-3 text-gray-900 group-hover:text-ahauGreen transition">智慧农业感知技术</h3>
+                <p class="text-gray-600 leading-relaxed mb-6">
+                    基于无人机与田间机器人的作物病虫害识别、表型分析及产量预测模型研究。
+                </p>
+                <div class="flex items-center text-ahauGreen font-semibold text-sm group-hover:translate-x-2 transition duration-300">
+                    了解详情 <span class="ml-1">&rarr;</span>
+                </div>
+            </a>
+
+            <a href="./research-info.html" class="block bg-white/90  rounded-xl p-8 hover:shadow-xl transition duration-300 border border-gray-100 group hover:-translate-y-1 cursor-pointer">
+                <div class="w-14 h-14 bg-indigo-100 rounded-lg flex items-center justify-center mb-6 group-hover:bg-indigo-600 transition">
+                    <svg class="w-8 h-8 text-indigo-600 group-hover:text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19.428 15.428a2 2 0 00-1.022-.547l-2.384-.477a6 6 0 00-3.86.517l-.318.158a6 6 0 01-3.86.517L6.05 15.21a2 2 0 00-1.806.547M8 4h8l-1 1v5.172a2 2 0 00.586 1.414l5 5c1.26 1.26.367 3.414-1.415 3.414H4.828c-1.782 0-2.674-2.154-1.414-3.414l5-5A2 2 0 009 10.172V5L8 4z" /></svg>
+                </div>
+                <h3 class="text-xl font-bold mb-3 text-gray-900 group-hover:text-indigo-600 transition">智能信息处理</h3>
+                <p class="text-gray-600 leading-relaxed mb-6">
+                    多模态数据融合、边缘计算与嵌入式AI部署，致力于实现高效的农业信息实时处理。
+                </p>
+                <div class="flex items-center text-indigo-600 font-semibold text-sm group-hover:translate-x-2 transition duration-300">
+                    了解详情 <span class="ml-1">&rarr;</span>
+                </div>
+            </a>
+
+        </div>
+    </div>
+</section>
+
+    <!-- <section class="py-20 bg-gray-50"> -->
+        <section class="py-20 bg-transparent relative z-10">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-end mb-12">
+                <div>
+                    <h2 class="text-3xl font-bold text-gray-900">实验室动态</h2>
+                    <div class="w-12 h-1 bg-techBlue mt-4"></div>
+                </div>
+                <a href="./news.html" class="text-techBlue font-semibold hover:underline">查看更多 &rarr;</a>
+            </div>
+
+            <div class="grid md:grid-cols-2 gap-10">
+                <article class="flex gap-6 bg-white p-6 rounded-lg shadow-sm hover:shadow-md transition group">
+                        <div class="flex-shrink-0 text-center">
+                            <div class="text-sm font-bold text-gray-400 uppercase tracking-wide">NOV</div>
+                            <div class="text-3xl font-bold text-techBlue">28</div>
+                        </div>
+                        <div>
+                            <h3 class="text-lg font-bold text-gray-900 mb-2 hover:text-ahauGreen cursor-pointer transition">
+                                <a href="./new-6.html">实验室在2025年安徽省大学生计算机博弈大赛中获一等奖</a>
+                            </h3>
+                            <p class="text-gray-600 text-sm line-clamp-2">
+                                实验室杨湘怡作为队长带领团队斩获军棋赛道一等奖，潘帅作为队长...
+                            </p>
+                        </div>
+                    </article>
+
+                    <article class="flex gap-6 bg-white p-6 rounded-lg shadow-sm hover:shadow-md transition group">
+                        <div class="flex-shrink-0 text-center">
+                            <div class="text-sm font-bold text-gray-400 uppercase tracking-wide">NOV</div>
+                            <div class="text-3xl font-bold text-techBlue">05</div>
+                        </div>
+                        <div>
+                            <h3 class="text-lg font-bold text-gray-900 mb-2 hover:text-ahauGreen cursor-pointer transition">
+                                <a href="./new-7.html">实验室成员在2025年安徽省大学生数学竞赛中获三等奖</a>
+                            </h3>
+                            <p class="text-gray-600 text-sm line-clamp-2">
+                                2025年安徽省大学生数学竞赛在中国科学技术大学圆满落幕...
+                            </p>
+                        </div>
+                    </article>
+            </div>
+        </div>
+    </section>
+
+    <footer id="contact" class="bg-gray-900 text-white py-12">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 grid md:grid-cols-3 gap-8">
+            <div>
+                <h4 class="text-lg font-bold mb-4">联系我们</h4>
+                <p class="text-gray-400 mb-2">安徽省合肥市长江西路130号</p>
+                <p class="text-gray-400 mb-2">安徽农业大学</p>
+                <p class="text-gray-400 mb-2">信息与人工智能学院</p>
+            </div>
+            <div>
+                <h4 class="text-lg font-bold mb-4">相关链接</h4>
+                <ul class="space-y-2 text-gray-400">
+                    <li><a href="https://www.ahau.edu.cn/" class="hover:text-white transition">安徽农业大学官网</a></li>
+                    <li><a href="https://xzxy.ahau.edu.cn/" class="hover:text-white transition">信息与人工智能学院</a></li>
+                    <li><a href="https://www.ccf.org.cn/" class="hover:text-white transition">中国计算机学会 (CCF)</a></li>
+                </ul>
+            </div>
+            <div>
+                <h4 class="text-lg font-bold mb-4">加入我们</h4>
+                <p class="text-gray-400 text-sm mb-4">
+                    欢迎对计算机视觉、深度学习感兴趣的本科生、研究生加入实验室。
+                </p>
+                <p class="text-gray-400 text-sm mb-4">
+                    联系方式：zhouqiong@ahau.edu.cn，QQ: 24187277
+                </p>
+            </div>
+        </div>
+        <div class="border-t border-gray-800 mt-12 pt-8 text-center text-gray-500 text-sm">
+            &copy; 2025 Intelligent Information Processing and Machine Vision Laboratory. All rights reserved.
+        </div>
+    <script color="15,76,129" 
+    opacity="0.9" 
+    zIndex="-1" 
+    count="150" src="https://cdn.bootcdn.net/ajax/libs/canvas-nest.js/2.0.4/canvas-nest.js">
+</script>
+</body>
+</html>

@@ -1,0 +1,598 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>团队成果 | IPMV Lab</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: { ahauGreen: '#006633', techBlue: '#0f4c81' },
+                    fontFamily: { sans: ['Inter', 'system-ui', 'sans-serif'] }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="bg-gray-50 text-gray-800 font-sans flex flex-col min-h-screen">
+
+    <nav class="bg-white shadow-md fixed w-full z-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between h-20">
+                <div class="flex items-center">
+                    <a href="index.html" class="flex-shrink-0 flex items-center gap-3">
+                        <span class="text-2xl font-bold text-techBlue tracking-tight">IPMV <span class="text-ahauGreen">Lab</span></span>
+                    </a>
+                </div>
+                <div class="hidden md:flex items-center space-x-8">
+                    <a href="./index.html" class="text-gray-700 hover:text-techBlue font-medium transition">首页</a>
+                    <a href="./news.html" class="text-gray-700 hover:text-techBlue font-medium transition">近期动态</a>
+                    <a href="./achievements.html" class="text-techBlue font-bold transition">团队成果</a>
+                    <a href="./team.html" class="text-gray-700 hover:text-techBlue font-medium transition">团队成员</a>
+                    <a href="./join.html" class="px-4 py-2 rounded-md bg-ahauGreen text-white font-medium hover:bg-green-700 transition">加入我们</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <header class="bg-white pt-32 pb-16 border-b border-gray-200">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <h1 class="text-4xl font-bold text-gray-900 mb-4">Research & Achievements</h1>
+            <p class="text-xl text-gray-500 max-w-2xl">
+                聚焦前沿计算机视觉技术，赋能智慧农业。展示实验室最新的学术论文、专利授权及竞赛成果。
+            </p>
+        </div>
+    </header>
+
+    <main class="flex-grow max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12 w-full">
+
+        <!-- <section class="mb-16">
+            <h2 class="text-2xl font-bold text-gray-900 mb-8 flex items-center gap-3">
+                <span class="w-2 h-8 bg-techBlue rounded-full"></span>
+                发表论文 (Selected Publications)
+            </h2>
+            
+            <div class="space-y-6">
+                <div class="bg-white p-6 rounded-xl shadow-sm border border-gray-100 hover:shadow-md transition">
+                    <h3 class="text-lg font-bold text-gray-900 mb-2">DFMFormer: A Dense-Focused Fine-Grained Network for Multi-View Wheat Spike Detection</h3>
+                    <div class="text-gray-600 mb-3">
+                        <span class="font-semibold text-gray-900">Qiong Zhou</span>, Ming Li, et al.
+                    </div>
+                    <div class="flex flex-wrap items-center gap-4 text-sm">
+                        <span class="bg-blue-100 text-techBlue font-bold px-2 py-1 rounded">CVPR 2025</span>
+                        <span class="text-gray-500">In Proceeding</span>
+                        <a href="#" class="text-techBlue hover:underline flex items-center gap-1">[PDF]</a>
+                        <a href="#" class="text-techBlue hover:underline flex items-center gap-1">[Code]</a>
+                    </div>
+                </div>
+
+                <div class="bg-white p-6 rounded-xl shadow-sm border border-gray-100 hover:shadow-md transition">
+                    <h3 class="text-lg font-bold text-gray-900 mb-2">BOD-YOLO: A Small Object Detection Method for Honeybee</h3>
+                    <div class="text-gray-600 mb-3">
+                        <span class="font-semibold text-gray-900">Qiong Zhou</span>, Student Name, et al.
+                    </div>
+                    <div class="flex flex-wrap items-center gap-4 text-sm">
+                        <span class="bg-green-100 text-ahauGreen font-bold px-2 py-1 rounded">Computers and Electronics in Agriculture</span>
+                        <span class="text-gray-500">2024</span>
+                        <a href="#" class="text-techBlue hover:underline">[PDF]</a>
+                    </div>
+                </div>
+                
+                </div> -->
+                
+        
+
+
+               <!--  <div class="w-full mb-16">
+                    </div> -->
+        <section>
+                    <h2 class="text-2xl font-bold text-gray-900 mb-6 flex items-center gap-3">
+                        <span class="w-2 h-8 bg-ahauGreen rounded-full"></span>
+                        学生成员作为第一发明人授权/在审的发明专利情况：
+                    </h2>
+                    
+                    <ul class="bg-white rounded-xl shadow-sm border border-gray-100 divide-y divide-gray-100">
+                        
+                        <li class="p-6 hover:bg-gray-50 transition group">
+                            <div class="flex flex-col md:flex-row md:justify-between md:items-start gap-2">
+                                <div class="flex-grow">
+                                    <h3 class="text-lg font-bold text-gray-900 mb-2 group-hover:text-techBlue transition">
+                                        基于改进 RMSIN 模型的土地利用遥感图像语义分割方法
+                                    </h3>
+                                    <p class="text-gray-600 mb-2">
+                                        <span class="font-semibold text-gray-700">发明人：</span>王睿欣, 周琼, 李紫萱, 方子睿,……
+                                    </p>
+                                </div>
+                                <div class="flex flex-col items-start md:items-end text-sm gap-1 flex-shrink-0">
+                                    <span class="bg-blue-50 text-techBlue px-2 py-1 rounded border border-blue-100">专利号: 202510260339.3</span>
+                                    <span class="text-gray-500">公告日: 2025.05.06</span>
+                                </div>
+                            </div>
+                        </li>
+
+                        <li class="p-6 hover:bg-gray-50 transition group">
+                            <div class="flex flex-col md:flex-row md:justify-between md:items-start gap-2">
+                                <div class="flex-grow">
+                                    <h3 class="text-lg font-bold text-gray-900 mb-2 group-hover:text-techBlue transition">
+                                        一种基于改进 LightM-UNet 模型的轻量级农业土地类型精细语义分割方法
+                                    </h3>
+                                    <p class="text-gray-600 mb-2">
+                                        <span class="font-semibold text-gray-700">发明人：</span>王睿欣, 周琼, 李紫萱, 方子睿, 徐博伟,……
+                                    </p>
+                                </div>
+                                <div class="flex flex-col items-start md:items-end text-sm gap-1 flex-shrink-0">
+                                    <span class="bg-green-50 text-ahauGreen px-2 py-1 rounded border border-green-100">专利号: ZL202510738868.X</span>
+                                    <span class="text-gray-500">授权公告日: 2025.10.24</span>
+                                </div>
+                            </div>
+                        </li>
+
+                        <li class="p-6 hover:bg-gray-50 transition group">
+                            <div class="flex flex-col md:flex-row md:justify-between md:items-start gap-2">
+                                <div class="flex-grow">
+                                    <h3 class="text-lg font-bold text-gray-900 mb-2 group-hover:text-techBlue transition">
+                                        一种基于改进 VM-UNet 模型的农田排水沟渠遥感图像语义分割方法
+                                    </h3>
+                                    <p class="text-gray-600 mb-2">
+                                        <span class="font-semibold text-gray-700">发明人：</span>李紫萱, 周琼, 王睿欣, 方子睿, 徐博伟,……
+                                    </p>
+                                </div>
+                                <div class="flex flex-col items-start md:items-end text-sm gap-1 flex-shrink-0">
+                                    <span class="bg-green-50 text-ahauGreen px-2 py-1 rounded border border-green-100">专利号: ZL202510168773.9</span>
+                                    <span class="text-gray-500">授权公告日: 2025.05.06</span>
+                                </div>
+                            </div>
+                        </li>
+
+                        <li class="p-6 hover:bg-gray-50 transition group">
+                            <div class="flex flex-col md:flex-row md:justify-between md:items-start gap-2">
+                                <div class="flex-grow">
+                                    <h3 class="text-lg font-bold text-gray-900 mb-2 group-hover:text-techBlue transition">
+                                        基于多尺度注意力机制的小番茄成熟度实时检测方法
+                                    </h3>
+                                    <p class="text-gray-600 mb-2">
+                                        <span class="font-semibold text-gray-700">发明人：</span>郑安平, 周琼, 张友华, 方子睿,……
+                                    </p>
+                                </div>
+                                <div class="flex flex-col items-start md:items-end text-sm gap-1 flex-shrink-0">
+                                    <span class="bg-green-50 text-ahauGreen px-2 py-1 rounded border border-green-100">专利号: 202311710896.8</span>
+                                    <span class="text-gray-500">授权公告日: 2024.07.09</span>
+                                </div>
+                            </div>
+                        </li>
+
+                        <li class="p-6 hover:bg-gray-50 transition group">
+                            <div class="flex flex-col md:flex-row md:justify-between md:items-start gap-2">
+                                <div class="flex-grow">
+                                    <h3 class="text-lg font-bold text-gray-900 mb-2 group-hover:text-techBlue transition">
+                                        一种基于改进 YOLOv8 的草莓成熟度检测方法及系统
+                                    </h3>
+                                    <p class="text-gray-600 mb-2">
+                                        <span class="font-semibold text-gray-700">发明人：</span>方子睿, 周琼, 郑安平, 李明, 薛佳毅,……
+                                    </p>
+                                </div>
+                                <div class="flex flex-col items-start md:items-end text-sm gap-1 flex-shrink-0">
+                                    <span class="bg-green-50 text-ahauGreen px-2 py-1 rounded border border-green-100">专利号: ZL202311273707.5</span>
+                                    <span class="text-gray-500">授权公告日: 2024.09.10</span>
+                                </div>
+                            </div>
+                        </li>
+
+                        <li class="p-6 hover:bg-gray-50 transition group">
+                            <div class="flex flex-col md:flex-row md:justify-between md:items-start gap-2">
+                                <div class="flex-grow">
+                                    <h3 class="text-lg font-bold text-gray-900 mb-2 group-hover:text-techBlue transition">
+                                        一种基于 Swin Transformer 的苹果成熟度检测方法
+                                    </h3>
+                                    <p class="text-gray-600 mb-2">
+                                        <span class="font-semibold text-gray-700">发明人：</span>方子睿, 周琼, 张友华, 郑安平, 李明,……
+                                    </p>
+                                </div>
+                                <div class="flex flex-col items-start md:items-end text-sm gap-1 flex-shrink-0">
+                                    <span class="bg-blue-50 text-techBlue px-2 py-1 rounded border border-blue-100">专利号: 202410080533.9</span>
+                                    <span class="text-gray-500">公告日: 2024.04.16</span>
+                                </div>
+                            </div>
+                        </li>
+
+                        <li class="p-6 hover:bg-gray-50 transition group">
+                            <div class="flex flex-col md:flex-row md:justify-between md:items-start gap-2">
+                                <div class="flex-grow">
+                                    <h3 class="text-lg font-bold text-gray-900 mb-2 group-hover:text-techBlue transition">
+                                        基于深度学习的图像识别方法及在水稻病害识别上的应用
+                                    </h3>
+                                    <p class="text-gray-600 mb-2">
+                                        <span class="font-semibold text-gray-700">发明人：</span>周琼, 张友华, 张武, 杨露, 陈祎琼,……
+                                    </p>
+                                </div>
+                                <div class="flex flex-col items-start md:items-end text-sm gap-1 flex-shrink-0">
+                                    <span class="bg-green-50 text-ahauGreen px-2 py-1 rounded border border-green-100">专利号: ZL202010561990.1</span>
+                                    <span class="text-gray-500">授权公告日: 2023.12.22</span>
+                                </div>
+                            </div>
+                        </li>
+
+                    </ul>
+                </section>
+            </div>
+            </div>
+             
+
+<section class="mb-16">
+    <h2 class="text-2xl font-bold text-gray-900 mb-6 flex items-center gap-3"></h2>
+    <h2 class="text-2xl font-bold text-gray-900 mb-6 flex items-center gap-3">
+        <span class="w-2 h-8 bg-purple-600 rounded-full"></span>
+        学生成员主持/参与大学生创新训练项目情况：
+    </h2>
+
+    <div class="space-y-8">
+
+        <div>
+            <div class="flex items-center mb-4">
+                <span class="text-lg font-bold text-techBlue bg-blue-50 px-3 py-1 rounded-lg border border-blue-100">2025</span>
+                <div class="h-px bg-gray-200 flex-grow ml-4"></div>
+            </div>
+            <div class="bg-white rounded-xl border border-gray-100 shadow-sm overflow-hidden">
+                <div class="p-5 flex flex-col md:flex-row gap-4 border-b border-gray-50 last:border-0 hover:bg-gray-50 transition">
+                    <div class="w-24 flex-shrink-0">
+                        <span class="inline-block bg-gray-100 text-gray-600 text-xs font-bold px-2 py-1 rounded">校级项目</span>
+                        <div class="text-xs text-gray-400 mt-1">5 项</div>
+                    </div>
+                    <div class="flex-grow space-y-2">
+                        <div class="flex flex-wrap gap-2">
+                            <div class="flex items-center gap-2 text-sm text-gray-700 bg-white border border-gray-200 px-3 py-1.5 rounded-lg">
+                                <span class="font-bold">王睿欣</span> <span class="text-gray-400">|</span> <span class="text-green-600 text-xs">主持/在研</span>
+                            </div>
+                            <div class="flex items-center gap-2 text-sm text-gray-700 bg-white border border-gray-200 px-3 py-1.5 rounded-lg">
+                                <span class="font-bold">徐博伟</span> <span class="text-gray-400">|</span> <span class="text-green-600 text-xs">主持/在研</span>
+                            </div>
+                            <div class="flex items-center gap-2 text-sm text-gray-700 bg-white border border-gray-200 px-3 py-1.5 rounded-lg">
+                                <span class="font-bold">杨湘怡</span> <span class="text-gray-400">|</span> <span class="text-green-600 text-xs">主持/在研</span>
+                            </div>
+                            <div class="flex items-center gap-2 text-sm text-gray-700 bg-white border border-gray-200 px-3 py-1.5 rounded-lg">
+                                <span class="font-bold">刘雨彤</span> <span class="text-gray-400">|</span> <span class="text-green-600 text-xs">主持/在研</span>
+                            </div>
+                            <div class="flex items-center gap-2 text-sm text-gray-700 bg-white border border-gray-200 px-3 py-1.5 rounded-lg">
+                                <span class="font-bold">潘帅、项嘉乐</span> <span class="text-gray-400">|</span> <span class="text-green-600 text-xs">主持/在研</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div>
+            <div class="flex items-center mb-4">
+                <span class="text-lg font-bold text-techBlue bg-blue-50 px-3 py-1 rounded-lg border border-blue-100">2024</span>
+                <div class="h-px bg-gray-200 flex-grow ml-4"></div>
+            </div>
+            <div class="bg-white rounded-xl border border-gray-100 shadow-sm overflow-hidden">
+                <div class="p-5 flex flex-col md:flex-row gap-4 border-b border-gray-50 hover:bg-gray-50 transition">
+                    <div class="w-24 flex-shrink-0">
+                        <span class="inline-block bg-red-50 text-red-600 text-xs font-bold px-2 py-1 rounded border border-red-100">国家级项目</span>
+                        <div class="text-xs text-gray-400 mt-1">3 项</div>
+                    </div>
+                    <div class="flex-grow space-y-2">
+                        <div class="flex flex-wrap gap-2">
+                            <div class="flex items-center gap-2 text-sm text-gray-700 bg-white border border-gray-200 px-3 py-1.5 rounded-lg">
+                                <span class="font-bold">刘金润</span> <span class="text-gray-400">|</span> <span class="text-green-600 text-xs">主持/在研</span>
+                            </div>
+                            <div class="flex items-center gap-2 text-sm text-gray-700 bg-white border border-gray-200 px-3 py-1.5 rounded-lg">
+                                <span class="font-bold">方子睿</span> <span class="text-gray-400">|</span> <span class="text-gray-500 text-xs">主持/结题</span>
+                            </div>
+                            <div class="flex items-center gap-2 text-sm text-gray-700 bg-white border border-gray-200 px-3 py-1.5 rounded-lg">
+                                <span class="font-bold">李明</span> <span class="text-gray-400">|</span> <span class="text-gray-500 text-xs">主持/结题</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="p-5 flex flex-col md:flex-row gap-4 hover:bg-gray-50 transition">
+                    <div class="w-24 flex-shrink-0">
+                        <span class="inline-block bg-blue-50 text-techBlue text-xs font-bold px-2 py-1 rounded border border-blue-100">省级项目</span>
+                        <div class="text-xs text-gray-400 mt-1">2 项</div>
+                    </div>
+                    <div class="flex-grow space-y-2">
+                        <div class="flex flex-wrap gap-2">
+                            <div class="flex items-center gap-2 text-sm text-gray-700 bg-white border border-gray-200 px-3 py-1.5 rounded-lg">
+                                <span class="font-bold">魏晓雪</span> <span class="text-gray-400">|</span> <span class="text-gray-500 text-xs">主持/结题</span>
+                            </div>
+                            <div class="flex items-center gap-2 text-sm text-gray-700 bg-white border border-gray-200 px-3 py-1.5 rounded-lg">
+                                <span class="font-bold">王睿欣</span> <span class="text-gray-400">|</span> <span class="text-gray-500 text-xs">主持/结题</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div>
+            <div class="flex items-center mb-4">
+                <span class="text-lg font-bold text-techBlue bg-blue-50 px-3 py-1 rounded-lg border border-blue-100">2023</span>
+                <div class="h-px bg-gray-200 flex-grow ml-4"></div>
+            </div>
+            <div class="bg-white rounded-xl border border-gray-100 shadow-sm overflow-hidden">
+                <div class="p-5 flex flex-col md:flex-row gap-4 hover:bg-gray-50 transition">
+                    <div class="w-24 flex-shrink-0">
+                        <span class="inline-block bg-blue-50 text-techBlue text-xs font-bold px-2 py-1 rounded border border-blue-100">省级项目</span>
+                        <div class="text-xs text-gray-400 mt-1">3 项</div>
+                    </div>
+                    <div class="flex-grow space-y-2">
+                        <div class="flex flex-wrap gap-2">
+                            <div class="flex items-center gap-2 text-sm text-gray-700 bg-white border border-gray-200 px-3 py-1.5 rounded-lg">
+                                <span class="font-bold">郑安平</span> <span class="text-gray-400">|</span> <span class="text-gray-500 text-xs">主持/结题</span>
+                            </div>
+                            <div class="flex items-center gap-2 text-sm text-gray-700 bg-white border border-gray-200 px-3 py-1.5 rounded-lg">
+                                <span class="font-bold">张静静</span> <span class="text-gray-400">|</span> <span class="text-gray-500 text-xs">主持/结题</span>
+                            </div>
+                            <!-- <div class="flex items-center gap-2 text-sm text-gray-700 bg-white border border-gray-200 px-3 py-1.5 rounded-lg">
+                                <span class="font-bold">吴康杰</span> <span class="text-gray-400">|</span> <span class="text-gray-500 text-xs">主持/结题</span>
+                            </div> -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div>
+            <div class="flex items-center mb-4">
+                <span class="text-lg font-bold text-gray-500 bg-gray-50 px-3 py-1 rounded-lg border border-gray-200">2021</span>
+                <div class="h-px bg-gray-200 flex-grow ml-4"></div>
+            </div>
+            <div class="bg-white rounded-xl border border-gray-100 shadow-sm overflow-hidden">
+                <div class="p-5 flex flex-col md:flex-row gap-4 border-b border-gray-50 hover:bg-gray-50 transition">
+                    <div class="w-24 flex-shrink-0">
+                        <span class="inline-block bg-blue-50 text-techBlue text-xs font-bold px-2 py-1 rounded border border-blue-100">省级项目</span>
+                        <div class="text-xs text-gray-400 mt-1">1 项</div>
+                    </div>
+                    <div class="flex-grow space-y-2">
+                        <div class="flex flex-wrap gap-2">
+                            <div class="flex items-center gap-2 text-sm text-gray-700 bg-white border border-gray-200 px-3 py-1.5 rounded-lg">
+                                <span class="font-bold">汤预</span> <span class="text-gray-400">|</span> <span class="text-gray-500 text-xs">主持/结题</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="p-5 flex flex-col md:flex-row gap-4 hover:bg-gray-50 transition">
+                    <div class="w-24 flex-shrink-0">
+                        <span class="inline-block bg-gray-100 text-gray-600 text-xs font-bold px-2 py-1 rounded">校级项目</span>
+                        <div class="text-xs text-gray-400 mt-1">2 项</div>
+                    </div>
+                    <div class="flex-grow space-y-2">
+                        <div class="flex flex-wrap gap-2">
+                            <div class="flex items-center gap-2 text-sm text-gray-700 bg-white border border-gray-200 px-3 py-1.5 rounded-lg">
+                                <span class="font-bold">苏灏杨</span> <span class="text-gray-400">|</span> <span class="text-gray-500 text-xs">主持/结题</span>
+                            </div>
+                            <!-- <div class="flex items-center gap-2 text-sm text-gray-700 bg-white border border-gray-200 px-3 py-1.5 rounded-lg">
+                                <span class="font-bold">毕嘉泽</span> <span class="text-gray-400">|</span> <span class="text-gray-500 text-xs">主持/结题</span>
+                            </div> -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</section>
+
+
+            <section>
+                 <!-- <h2 class="text-2xl font-bold text-gray-900 mb-6 flex items-center gap-3">
+                     -->
+                </h2>
+                <h2 class="text-2xl font-bold text-gray-900 mb-6 flex items-center gap-3">
+                    <span class="w-2 h-8 bg-orange-500 rounded-full"></span>
+                    学生成员作为队长/核心成员参加省A类学科竞赛获奖部分情况：
+                </h2>
+
+                <div class="space-y-8">
+                    
+                    <div>
+                        <div class="flex items-center mb-4">
+                            <span class="text-lg font-bold text-techBlue bg-blue-50 px-3 py-1 rounded-lg border border-blue-100">2025</span>
+                            <div class="h-px bg-gray-200 flex-grow ml-4"></div>
+                        </div>
+                        <ul class="grid md:grid-cols-2 gap-4">
+                            <li class="bg-white p-4 rounded-lg border border-gray-100 shadow-sm flex items-start gap-3 hover:shadow-md transition">
+                                <span class="text-xl"></span>
+                                <div>
+                                    <div class="font-bold text-gray-800">安徽省大学生创新大赛（2025）</div>
+                                    <div class="text-sm text-gray-500">高教主赛道 金奖</div>
+                                </div>
+                            </li>
+                            <li class="bg-white p-4 rounded-lg border border-gray-100 shadow-sm flex items-start gap-3 hover:shadow-md transition">
+                                <span class="text-xl"></span>
+                                <div>
+                                    <div class="font-bold text-gray-800">第三届安徽省乡村振兴创新创业大赛</div>
+                                    <div class="text-sm text-gray-500">一等奖</div>
+                                </div>
+                            </li>
+                            <li class="bg-white p-4 rounded-lg border border-gray-100 shadow-sm flex items-start gap-3 hover:shadow-md transition">
+                                <span class="text-xl"></span>
+                                <div>
+                                    <div class="font-bold text-gray-800">安徽省大数据与人工智能应用竞赛</div>
+                                    <div class="text-sm text-gray-500">一等奖</div>
+                                </div>
+                            </li>
+                            <li class="bg-white p-4 rounded-lg border border-gray-100 shadow-sm flex items-start gap-3 hover:shadow-md transition">
+                                <span class="text-xl"></span>
+                                <div>
+                                    <div class="font-bold text-gray-800">安徽省大学生计算机博弈竞赛</div>
+                                    <div class="text-sm text-gray-500">省级一等奖 <span class="text-xs bg-orange-50 text-orange-500 px-1 rounded"></span></div>
+                                </div>
+                            </li>
+                            <li class="bg-white p-4 rounded-lg border border-gray-100 shadow-sm flex items-start gap-3 hover:shadow-md transition">
+                                <span class="text-xl"></span>
+                                <div>
+                                    <div class="font-bold text-gray-800">第十九届“挑战杯”全国大学生课外学术科技作品竞赛</div>
+                                    <div class="text-sm text-gray-500">国家级铜奖</div>
+                                </div>
+                            </li>
+                            <li class="bg-white p-4 rounded-lg border border-gray-100 shadow-sm flex items-start gap-3 hover:shadow-md transition">
+                                <span class="text-xl"></span>
+                                <div>
+                                    <div class="font-bold text-gray-800">中国大学生计算机设计大赛安徽省级赛</div>
+                                    <div class="text-sm text-gray-500">三等奖</div>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div>
+                        <div class="flex items-center mb-4">
+                            <span class="text-lg font-bold text-techBlue bg-blue-50 px-3 py-1 rounded-lg border border-blue-100">2024</span>
+                            <div class="h-px bg-gray-200 flex-grow ml-4"></div>
+                        </div>
+                        <ul class="grid md:grid-cols-2 gap-4">
+                            <li class="bg-white p-4 rounded-lg border border-gray-100 shadow-sm flex items-start gap-3 hover:shadow-md transition ring-1 ring-orange-100">
+                                <span class="text-xl"></span>
+                                <div>
+                                    <div class="font-bold text-gray-800">安徽省大学生创新大赛（2024）</div>
+                                    <div class="text-sm text-gray-500">高教主赛道金奖 <span class="text-orange-500 font-bold ml-1 text-xs">学院历史首金</span></div>
+                                </div>
+                            </li>
+                            <li class="bg-white p-4 rounded-lg border border-gray-100 shadow-sm flex items-start gap-3 hover:shadow-md transition">
+                                <span class="text-xl"></span>
+                                <div>
+                                    <div class="font-bold text-gray-800">第十一届“大唐杯”全国大学生新一代信息通信技术大赛</div>
+                                    <div class="text-sm text-gray-500">国家级三等奖 / 省级一等奖</div>
+                                </div>
+                            </li>
+                            <li class="bg-white p-4 rounded-lg border border-gray-100 shadow-sm flex items-start gap-3 hover:shadow-md transition">
+                                <span class="text-xl"></span>
+                                <div>
+                                    <div class="font-bold text-gray-800">安徽省大学生电子设计大赛</div>
+                                    <div class="text-sm text-gray-500">省级一等奖</div>
+                                </div>
+                            </li>
+                            <li class="bg-white p-4 rounded-lg border border-gray-100 shadow-sm flex items-start gap-3 hover:shadow-md transition">
+                                <span class="text-xl"></span>
+                                <div>
+                                    <div class="font-bold text-gray-800">安徽省乡村振兴创新创业大赛</div>
+                                    <div class="text-sm text-gray-500">省级一等奖、二等奖</div>
+                                </div>
+                            </li>
+                            <li class="bg-white p-4 rounded-lg border border-gray-100 shadow-sm flex items-start gap-3 hover:shadow-md transition">
+                                <span class="text-xl"></span>
+                                <div>
+                                    <div class="font-bold text-gray-800">安徽省大数据与人工智能应用竞赛</div>
+                                    <div class="text-sm text-gray-500">二等奖</div>
+                                </div>
+                            </li>
+                            <li class="bg-white p-4 rounded-lg border border-gray-100 shadow-sm flex items-start gap-3 hover:shadow-md transition">
+                                <span class="text-xl"></span>
+                                <div>
+                                    <div class="font-bold text-gray-800">全国大学生数学建模安徽赛区</div>
+                                    <div class="text-sm text-gray-500">三等奖</div>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div>
+                        <div class="flex items-center mb-4">
+                            <span class="text-lg font-bold text-techBlue bg-blue-50 px-3 py-1 rounded-lg border border-blue-100">2023</span>
+                            <div class="h-px bg-gray-200 flex-grow ml-4"></div>
+                        </div>
+                        <ul class="grid md:grid-cols-2 gap-4">
+                            <li class="bg-white p-4 rounded-lg border border-gray-100 shadow-sm flex items-start gap-3 hover:shadow-md transition">
+                                <span class="text-xl"></span>
+                                <div>
+                                    <div class="font-bold text-gray-800">安徽省大数据与人工智能应用竞赛</div>
+                                    <div class="text-sm text-gray-500">省级一等奖 <span class="text-xs bg-gray-100 text-gray-600 px-1 rounded">省排名11/160</span></div>
+                                </div>
+                            </li>
+                            <li class="bg-white p-4 rounded-lg border border-gray-100 shadow-sm flex items-start gap-3 hover:shadow-md transition">
+                                <span class="text-xl"></span>
+                                <div>
+                                    <div class="font-bold text-gray-800">安徽省大学生计算机博弈竞赛</div>
+                                    <div class="text-sm text-gray-500">省级一等奖 <span class="text-xs bg-orange-50 text-orange-500 px-1 rounded"></span></div>
+                                </div>
+                            </li>
+                            <li class="bg-white p-4 rounded-lg border border-gray-100 shadow-sm flex items-start gap-3 hover:shadow-md transition">
+                                <span class="text-xl"></span>
+                                <div>
+                                    <div class="font-bold text-gray-800">全国大学生数学建模竞赛</div>
+                                    <div class="text-sm text-gray-500">省级二等奖、三等奖</div>
+                                </div>
+                            </li>
+                            <li class="bg-white p-4 rounded-lg border border-gray-100 shadow-sm flex items-start gap-3 hover:shadow-md transition">
+                                <span class="text-xl"></span>
+                                <div>
+                                    <div class="font-bold text-gray-800">全国大学生统计建模竞赛</div>
+                                    <div class="text-sm text-gray-500">省级二等奖</div>
+                                </div>
+                            </li>
+                            <li class="bg-white p-4 rounded-lg border border-gray-100 shadow-sm flex items-start gap-3 hover:shadow-md transition">
+                                <span class="text-xl"></span>
+                                <div>
+                                    <div class="font-bold text-gray-800">“大唐杯”全国大学生新一代信息通信技术大赛</div>
+                                    <div class="text-sm text-gray-500">安徽赛区 二等奖、三等奖</div>
+                                </div>
+                            </li>
+                            <li class="bg-white p-4 rounded-lg border border-gray-100 shadow-sm flex items-start gap-3 hover:shadow-md transition">
+                                <span class="text-xl"></span>
+                                <div>
+                                    <div class="font-bold text-gray-800">蓝桥杯全国软件和信息技术专业人才大赛</div>
+                                    <div class="text-sm text-gray-500">安徽赛区三等奖 (C/C++组)</div>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div>
+                        <div class="flex items-center mb-4">
+                            <span class="text-lg font-bold text-gray-500 bg-gray-50 px-3 py-1 rounded-lg border border-gray-200">2018-2022</span>
+                            <div class="h-px bg-gray-200 flex-grow ml-4"></div>
+                        </div>
+                        <ul class="grid md:grid-cols-2 gap-4">
+                            <li class="bg-white p-4 rounded-lg border border-gray-100 shadow-sm flex items-start gap-3 hover:shadow-md transition">
+                                <span class="text-xl"></span>
+                                <div>
+                                    <div class="font-bold text-gray-800">安徽省“互联网+”大学生创新创业大赛 (2022)</div>
+                                    <div class="text-sm text-gray-500">高教主赛道 金奖</div>
+                                </div>
+                            </li>
+                            <li class="bg-white p-4 rounded-lg border border-gray-100 shadow-sm flex items-start gap-3 hover:shadow-md transition">
+                                <span class="text-xl"></span>
+                                <div>
+                                    <div class="font-bold text-gray-800">“大唐杯”全国大学生移动通信5G技术大赛 (2022)</div>
+                                    <div class="text-sm text-gray-500">国赛三等奖 / 省级一等奖</div>
+                                </div>
+                            </li>
+                            <li class="bg-white p-4 rounded-lg border border-gray-100 shadow-sm flex items-start gap-3 hover:shadow-md transition">
+                                <span class="text-xl"></span>
+                                <div>
+                                    <div class="font-bold text-gray-800">中国大学生计算机设计大赛 (2022)</div>
+                                    <div class="text-sm text-gray-500">国赛三等奖</div>
+                                </div>
+                            </li>
+                            <li class="bg-white p-4 rounded-lg border border-gray-100 shadow-sm flex items-start gap-3 hover:shadow-md transition">
+                                <span class="text-xl"></span>
+                                <div>
+                                    <div class="font-bold text-gray-800">安徽省“互联网+”大学生创新创业大赛 (2021)</div>
+                                    <div class="text-sm text-gray-500">高教主赛道 铜奖</div>
+                                </div>
+                            </li>
+                            <li class="bg-gray-50 p-4 rounded-lg border border-dashed border-gray-200 text-center text-gray-500 text-sm col-span-1 md:col-span-2">
+                                
+                            </li>
+                        </ul>
+                    </div>
+
+                </div>
+            </section>
+        </div>
+
+    </main>
+
+    <footer id="contact" class="bg-gray-900 text-white py-12 mt-auto">
+        <div class="max-w-7xl mx-auto px-4 text-center text-sm text-gray-500">
+            &copy; 2025 Intelligent Information Processing and Machine Vision Laboratory.
+        </div>
+    </footer>
+    
+</body>
+</html>

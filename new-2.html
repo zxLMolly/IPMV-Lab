@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>实验室在巢湖开展数据采集工作 | IPMV Lab</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: { ahauGreen: '#006633', techBlue: '#0f4c81' },
+                    fontFamily: { sans: ['Inter', 'system-ui', 'sans-serif'] }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="bg-gray-50 text-gray-800 font-sans flex flex-col min-h-screen">
+
+    <nav class="bg-white shadow-md fixed w-full z-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between h-20">
+                <div class="flex items-center">
+                    <a href="index.html" class="flex-shrink-0 flex items-center gap-3">
+                        <span class="text-2xl font-bold text-techBlue tracking-tight">IPMV <span class="text-ahauGreen">Lab</span></span>
+                    </a>
+                </div>
+                <div class="hidden md:flex items-center space-x-8">
+                    <a href="index.html" class="text-gray-700 hover:text-techBlue font-medium transition">首页</a>
+                    <a href="news.html" class="text-techBlue font-bold transition">近期动态</a>
+                    <a href="achievements.html" class="text-gray-700 hover:text-techBlue font-medium transition">团队成果</a>
+                    <a href="team.html" class="text-gray-700 hover:text-techBlue font-medium transition">团队成员</a>
+                    <a href="join.html" class="px-4 py-2 rounded-md bg-ahauGreen text-white font-medium hover:bg-green-700 transition">加入我们</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <main class="flex-grow pt-32 pb-16">
+        <article class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+            
+            <div class="mb-8 text-sm text-gray-500">
+                <a href="index.html" class="hover:text-techBlue">首页</a> 
+                <span class="mx-2">/</span> 
+                <a href="news.html" class="hover:text-techBlue">近期动态</a> 
+                <span class="mx-2">/</span> 
+                <span class="text-gray-800">正文</span>
+            </div>
+
+            <header class="mb-10 text-center">
+                <div class="inline-block bg-green-50 text-ahauGreen text-xs font-bold px-3 py-1 rounded-full mb-4">
+                    实践调研
+                </div>
+                <h1 class="text-3xl md:text-4xl font-bold text-gray-900 mb-6 leading-tight">
+                    实验室团队赴巢湖开展空地一体化数据采集调研活动
+                </h1>
+                <div class="flex justify-center items-center text-sm text-gray-500 space-x-6 border-b border-gray-100 pb-8">
+                    <div class="flex items-center">
+                        <svg class="w-4 h-4 mr-1" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"></path></svg>
+                        2025-03-26
+                    </div>
+                    <div class="flex items-center">
+                        <svg class="w-4 h-4 mr-1" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"></path><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"></path></svg>
+                        安徽·合肥·巢湖
+                    </div>
+                </div>
+            </header>
+
+            <div class="prose prose-lg max-w-none text-gray-700 leading-relaxed">
+                
+                <figure class="mb-10">
+                    <img src="./new/1.jpg" 
+                         alt="巢湖调研现场" 
+                         class="w-full rounded-xl shadow-md">
+                    <figcaption class="text-center text-sm text-gray-500 mt-2">图1：成员合影</figcaption>
+                </figure>
+
+                <p class="mb-6">
+                    <span class="font-bold"></span> 随着智慧农业与生态监测技术的快速发展，真实场景下的多模态数据显得尤为重要。为了更好地理解复杂农业环境中的视觉感知挑战，2025年3月26日，实验室（IPMV Lab）团队在周琼老师的带领下，前往巢湖周边区域开展了为期一天的深度数据采集与实地调研活动。
+                </p>
+
+                <h3 class="text-2xl font-bold text-gray-900 mt-10 mb-4"></h3>
+                <p class="mb-6">
+                    本次调研旨在构建一个涵盖“空-地-水”立体维度的农业生态数据集。团队携带了多旋翼无人机、高光谱成像仪、手持式水质分析仪等专业设备。
+                </p>
+                <p class="mb-6">
+                    在数据采集现场，无人机小组对目标水域及周边农田进行了多架次的低空航拍，获取了不同光照条件下的高分辨率可见光图像与多光谱数据。这些数据将用于后续的水体监测算法以及农田边界提取模型的训练与验证。
+                </p>
+
+                <figure class="mb-10">
+                    <img src="./new/4.jpg" 
+                         alt="数据采样" 
+                         class="w-full rounded-xl shadow-md">
+                    <figcaption class="text-center text-sm text-gray-500 mt-2">图2：团队成员进行水质样本采集与参数记录</figcaption>
+                </figure>
+
+                <h3 class="text-2xl font-bold text-gray-900 mt-10 mb-4"></h3>
+                <p class="mb-6">
+                    除了空中遥感，地面小组深入田间地头和湖岸边，采集了大量的水样实体及农作物病害样本，并进行了详细的标签记录。
+                </p>
+                <p class="mb-6">
+                    
+                </p>
+
+                <h3 class="text-2xl font-bold text-gray-900 mt-10 mb-4">未来展望</h3>
+                <p class="mb-6">
+                    本次采集的宝贵数据将被整理纳入实验室的数据库。未来，实验室将继续坚持“产学研”结合的思路，定期开展户外实践活动，让科研成果真正落地，服务于安徽省的智慧农业与生态文明建设。
+                </p>
+
+            </div>
+
+            <div class="mt-16 pt-8 border-t border-gray-200 flex justify-between items-center">
+                <a href="news.html" class="inline-flex items-center text-gray-600 hover:text-techBlue font-medium transition">
+                    &larr; 返回列表
+                </a>
+                <div class="flex space-x-4">
+                    <span class="text-sm text-gray-400">分享至：微信 / 朋友圈</span>
+                </div>
+            </div>
+
+        </article>
+    </main>
+
+    <footer id="contact" class="bg-gray-900 text-white py-12 mt-auto">
+        <div class="max-w-7xl mx-auto px-4 text-center text-sm text-gray-500">
+            &copy; 2025 Intelligent Information Processing and Machine Vision Laboratory.
+        </div>
+    </footer>
+
+</body>
+</html>

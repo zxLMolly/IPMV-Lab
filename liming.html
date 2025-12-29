@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>成员介绍 | IPMV Lab</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        ahauGreen: '#006633',
+                        techBlue: '#0f4c81',
+                    },
+                    fontFamily: {
+                        sans: ['Inter', 'system-ui', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="bg-gray-50 text-gray-800 font-sans flex flex-col min-h-screen">
+
+    <nav class="bg-white shadow-md fixed w-full z-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between h-20">
+                <div class="flex items-center">
+                    <a href="index.html" class="flex-shrink-0 flex items-center gap-3">
+                        <span class="text-2xl font-bold text-techBlue tracking-tight">IPMV <span class="text-ahauGreen">Lab</span></span>
+                    </a>
+                </div>
+                <div class="hidden md:flex items-center space-x-8">
+                    <a href="index.html" class="text-gray-700 hover:text-techBlue font-medium transition">首页</a>
+                    <a href="team.html" class="text-techBlue font-bold transition">返回团队</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <main class="flex-grow max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-32 w-full">
+        
+        <div class="grid grid-cols-1 md:grid-cols-12 gap-12">
+            
+            <div class="md:col-span-4 lg:col-span-3">
+                <div class="bg-white p-6 rounded-xl shadow-sm border border-gray-100 sticky top-28">
+                    <div class="w-full aspect-[3/4] rounded-lg overflow-hidden mb-6 bg-gray-200">
+                        <img src="team-photo\liming.png" 
+                             alt="Profile Photo" 
+                             class="w-full h-full object-cover">
+                    </div>
+                    
+                    <h1 class="text-2xl font-bold text-gray-900">李明</h1>
+                    <p class="text-ahauGreen font-medium mb-6">2021级 本科生</p>
+                    
+                    <div class="space-y-4">
+                        <div class="flex items-center gap-3 text-sm text-gray-600">
+                            <svg class="w-5 h-5 text-techBlue" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path></svg>
+                            <span>3202259370@qq.com</span>
+                        </div>
+                        <div class="flex items-center gap-3 text-sm text-gray-600">
+                            <svg class="w-5 h-5 text-techBlue" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4"></path></svg>
+                            <a href="#" class="hover:text-techBlue hover:underline">GitHub Profile</a>
+                        </div>
+                        </div>
+
+                    <div class="mt-8 pt-6 border-t border-gray-100">
+                        <h3 class="text-xs font-bold text-gray-400 uppercase tracking-wider mb-2">研究方向</h3>
+                        <div class="flex flex-wrap gap-2">
+                            <!-- <span class="bg-blue-50 text-techBlue text-xs px-2 py-1 rounded-md">计算机视觉</span>
+                            <span class="bg-blue-50 text-techBlue text-xs px-2 py-1 rounded-md">深度学习</span>
+                            <span class="bg-blue-50 text-techBlue text-xs px-2 py-1 rounded-md">目标检测</span> -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="md:col-span-8 lg:col-span-9 space-y-12">
+                
+                <section>
+                <h2 class="text-2xl font-bold text-gray-900 mb-4 flex items-center gap-3">
+                    <span class="w-2 h-8 bg-ahauGreen rounded-full"></span>
+                    个人简介 (Biography)
+                </h2>
+                
+                <p class="text-gray-600 leading-relaxed text-lg mb-4">
+                    安徽农业大学信息与人工智能学院 2021 级本科生。目前就读于西北工业大学新一代电子信息技术专业。
+                </p>
+
+                <p class="text-gray-600 leading-relaxed text-lg mb-4">
+                    本科期间曾获国家励志奖学金、专业特等奖学金、专业一等奖学金等。主持和参与<span class="font-bold text-techBlue">国家级大学生创新训练项目 2 项</span>优秀结题，以第一作者授权<span class="font-bold text-techBlue">发明专利 2 项</span>，软件著作权 2 项。
+                </p>
+
+                <p class="text-gray-600 leading-relaxed text-lg">
+                   
+                </p>
+            </section>
+                <section>
+                    <h2 class="text-2xl font-bold text-gray-900 mb-6 flex items-center gap-3">
+                        <span class="w-2 h-8 bg-techBlue rounded-full"></span>
+                        教育经历 (Education)
+                    </h2>
+                    <div class="space-y-6 border-l-2 border-gray-200 pl-6 relative">
+                        <div class="relative">
+                            <span class="absolute -left-[31px] top-1 w-4 h-4 bg-white border-4 border-techBlue rounded-full"></span>
+                            <h3 class="text-lg font-bold text-gray-900">硕士研究生 | 新一代电子信息技术</h3>
+                            <p class="text-gray-500">西北工业大学，2025 - 至今</p>
+                        </div>
+                        <div class="relative">
+                            <span class="absolute -left-[31px] top-1 w-4 h-4 bg-white border-4 border-gray-300 rounded-full"></span>
+                            <h3 class="text-lg font-bold text-gray-900">工学学士 | 电子信息工程</h3>
+                            <p class="text-gray-500">安徽农业大学，2021 - 2025</p>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- <section>
+                    <h2 class="text-2xl font-bold text-gray-900 mb-6 flex items-center gap-3">
+                        <span class="w-2 h-8 bg-ahauGreen rounded-full"></span>
+                        发表论文 (Publications)
+                    </h2>
+                    <ul class="space-y-4 text-gray-600 list-disc list-inside">
+                        <li>
+                            <span class="font-bold text-gray-900">Ming Li</span>, Qiong Zhou*, et al. "A Novel Attention Mechanism for Wheat Spike Detection." 
+                            <span class="italic text-gray-500">IEEE Geoscience and Remote Sensing Letters (GRSL)</span>, 2024.
+                        </li>
+                        <li>
+                            <span class="font-bold text-gray-900">李明</span>, 周琼*. "基于改进YOLOv8的田间害虫检测算法." 
+                            <span class="italic text-gray-500">农业工程学报</span>, 2023.
+                        </li>
+                    </ul>
+                </section> -->
+
+                 <section>
+                    <h2 class="text-2xl font-bold text-gray-900 mb-6 flex items-center gap-3">
+                        <span class="w-2 h-8 bg-techBlue rounded-full"></span>
+                        获奖荣誉 (Honors & Awards)
+                    </h2>
+                    <ul class="space-y-2 text-gray-600">
+                        <li>🏆 2024年 安徽省大学生计算机博弈竞赛 一等奖</li>
+                        <li>🏆 2023年 第十届“大唐杯”全国大学生新一代通信技术大赛 安徽省三等奖</li>
+                    </ul>
+                </section>
+
+            </div>
+        </div>
+
+    </main>
+
+    <footer class="bg-gray-900 text-white py-8 text-center text-sm text-gray-500">
+        &copy; 2025 IPMV Lab. All rights reserved.
+    </footer>
+
+</body>
+</html>
